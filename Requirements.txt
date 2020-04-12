@@ -1,0 +1,4 @@
+Python==3.7
+robotframework_jsonvalidator==2.0.0
+jsonpointer==2.0.0
+jsonpath=2.5.1
