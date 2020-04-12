@@ -1,0 +1,7 @@
+*** Settings ***
+Library           BuiltIn
+Library           ${CURDIR}/Libraries/ComFinra
+Library           String
+Library           Collections
+Library           JsonValidator
+Library           ${CURDIR}/Libraries/ExcelLibrary/ExcelLibrary.py
