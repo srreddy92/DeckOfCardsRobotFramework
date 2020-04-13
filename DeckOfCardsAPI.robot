@@ -1,9 +1,6 @@
 *** Settings ***
 Resource          Resource.txt
 
-*** Variables ***
-Set Suite Variable    ${responsecode}
-
 *** Test Cases ***
 Create new Deck
     ${d}=    Create Dictionary    jokers_enabled    true
