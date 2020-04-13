@@ -3,19 +3,24 @@ An API to simulate a deck of cards
 
 The docs are on http://deckofcardsapi.com
 
-Feel free to fork and do whatever you want with the project, it's all under the MIT license.
-
 Install
-From inside the application's directory, run the following:
+-------
+This project requires Python 3.x and the following Python libraries installed:
+```
+Install latest version of Python
+pip3 install –r Requirements.txt
+```
+Code
+-----
+Template code is provided in DeckOfCardsAPI.robot. You need to include ComFinra library(which is already packaged) to the resource file to use http methods GET/POST. 
+Run
+-----
+In a terminal or command window, navigate to the top-level project directory DeckOfCards(that contains this README) and run one of the following commands:
+```
+robot -T DeckOfCardsAPI.robot 
+```
+This will execute the test cases and report will be generated.
+Open log.html to view the results.
 
-pip install -r requirements.txt
-python manage.py migrate
-Usage
-python manage.py runserver 127.0.0.1:8000
-Once the server is running you can access it at http://127.0.0.1:8000 (or the machine's address if the machine is remote). API documentation is available at the app's front page or at http://deckofcardsapi.com.
 
-The server can be stopped using Ctrl+C.
 
-Docker
-docker build -t deckofcards .
-docker run -p 8000:8000 -d deckofcards:latest
